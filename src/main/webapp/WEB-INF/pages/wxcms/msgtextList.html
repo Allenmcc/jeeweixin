@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<#include "../common/res.html">
+		<#include "../common/res.html"/>
 		
 		<script type="text/javascript">
 			function doDelete(id,baseId){
@@ -14,11 +14,11 @@
 	</head>
 	
 	<body class="bg">
-		<#include "../common/top.html">
+		<#include "../common/top.html"/>
 		
 		<div class="content">
 			<div class="block-nav">
-				<#include "../common/nav.html">
+				<#include "../common/nav.html"/>
 			</div>
 			
 			<div class="block-content" >
@@ -48,13 +48,13 @@
 							<#list pageList as row>
 							<#if row_index %2 == 0>
 							<tr >
-							<#else>
-							<tr class="even-tr">
+							<#else/>
+							<tr class="even-tr"/>
 							</#if>
 								<td>${row.inputcode!}</td>
 								<td>${row.content!}</td>
 								<td>
-									<a href="javascript:void(0);" onclick="doDelete('${row.id}','${row.baseId}')">删除</a>&nbsp;&nbsp;
+									<a href="javascript:void(0);" onclick="doDelete('${row.id}','${row.baseId!}')">删除</a>&nbsp;&nbsp;
 									<a href="${s.base}/msgtext/toMerge.html?id=${row.id}" >修改</a>
 								</td>
 							</tr>
@@ -66,7 +66,7 @@
 			<div class="clearfloat"></div>
 		</div>
 		
-		<#include "../common/footer.html">
+		<#include "../common/footer.html"/>
 	</body>
 	
 </html>

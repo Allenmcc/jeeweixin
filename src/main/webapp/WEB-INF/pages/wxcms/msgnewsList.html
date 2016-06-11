@@ -59,7 +59,7 @@
 									<img src="${row.picpath!}" style="border:none;height:40px;width:60px;"/>
 								</td> -->
 								<td>
-									<a href="javascript:void(0);" onclick="doDelete('${row.id}','${row.baseId}')">删除</a>&nbsp;&nbsp;
+									<a href="javascript:void(0);" onclick="doDelete('${row.id}','${row.baseId!}')">删除</a>&nbsp;&nbsp;
 									<a href="${s.base}/msgnews/toMerge.html?id=${row.id}">修改</a>&nbsp;&nbsp;
 									<#if row.fromurl?? && row.fromurl != '' >
 									<a href="${row.fromurl!}" target="_blank">预览</a>
