@@ -1,18 +1,4 @@
-
-感谢您使用JeeWeixin
-预览效果：www.jeeweixin.com 
-
-版本V2.0
-发布时间：20151208
-
-使用教程请访问我们的网站：
-微信派：免费的微信开发者源码服务平台
-www.weixinpy.com 
-weixin program for you
-
-
 JEEWeiXin V2.0 功能
-
 1、URL、Tocken 认证接口
 2、消息接收接口
 3、文本消息回复接口
@@ -40,9 +26,7 @@ JEEWeiXin V2.0 功能
 25、通过interceptor拦截器实现OAuth认证，并缓存openid
 26、JS-Ticket的缓存
 27、JS-SDK 实例
--------------------------------------------------------------2015-12-17
 28、自定义个性化菜单接口
 
-更多测试功能请关注方官方微信号：weixinpy-com
 
 
